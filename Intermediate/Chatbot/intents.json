@@ -1,0 +1,181 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hey",
+        "How are you",
+        "Is anyone there?",
+        "Hello",
+        "Good day"
+      ],
+      "responses": [
+        "Hey :-)",
+        "Hello, thanks for visiting",
+        "Hi there, what can I do for you?",
+        "Hi there, how can I help?"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "See you later",
+        "Goodbye"
+      ],
+      "responses": [
+        "See you later, thanks for visiting",
+        "Have a nice day",
+        "Bye! Come back again soon."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": [
+        "Thanks",
+        "Thank you",
+        "That's helpful",
+        "Thank's a lot!"
+      ],
+      "responses": [
+        "Happy to help!",
+        "Any time!",
+        "My pleasure"
+      ]
+    },
+    {
+      "tag": "Introduction",
+      "patterns": [
+        "What is Zuraverse?",
+        "Zuraverse",
+        "Discover Zuraverse, the sustainable metaverse that's transforming gaming.",
+        "Learn about our P2E model and how we welcome Web2 gamers."
+      ],
+      "responses": [
+        "Zuraverse is a sustainable metaverse that's revolutionizing the gaming landscape.",
+        "Our Play-to-Earn model allows players to earn rewards while enjoying games, and we embrace Web2 gamers as part of our community."
+      ]
+    },
+    {
+      "tag": "Products and Features",
+      "patterns": [
+        "Experience Zuraverse's cutting-edge games and immersive gameplay.",
+        "Earn while you play with our unique Play-to-Earn system.",
+        "Engage Web2 gamers with our inclusive platform.",
+        "Explore our range of offerings: marketplace, virtual forest, Zurapark, NFT collectibles."
+      ],
+      "responses": [
+        "Zuraverse offers a collection of innovative games with immersive gameplay.",
+        "Our Play-to-Earn system allows you to earn rewards as you enjoy gaming.",
+        "Our platform is designed to be inclusive, welcoming both Web2 and Web3 gamers.",
+        "Discover a variety of offerings within Zuraverse, including the marketplace, virtual forest, Zurapark, and NFT collectibles."
+      ]
+    },
+    {
+      "tag": "Marketplace",
+      "patterns": [
+        "Dive into our marketplace's dynamic ecosystem.",
+        "Buy, sell, and trade items seamlessly within the platform.",
+        "Benefit from exclusive features for marketplace users."
+      ],
+      "responses": [
+        "Our marketplace within Zuraverse provides a dynamic ecosystem for transactions.",
+        "Trade items effortlessly in our platform's integrated marketplace.",
+        "Marketplace users enjoy exclusive features that enhance the trading experience."
+      ]
+    },
+    {
+      "tag": "Virtual Forest",
+      "patterns": [
+        "Immerse yourself in the virtual forest's lush environment.",
+        "Participate in activities that contribute to the metaverse's sustainability."
+      ],
+      "responses": [
+        "Experience the lush environment of our virtual forest and immerse yourself in its beauty.",
+        "Engage in activities within the virtual forest that contribute to the overall sustainability of the metaverse."
+      ]
+    },
+    {
+      "tag": "Zurapark",
+      "patterns": [
+        "Uncover the excitement of Zurapark and its interactive attractions.",
+        "Elevate your experience with unique features available only in Zurapark."
+      ],
+      "responses": [
+        "Zurapark offers a thrilling experience with interactive attractions that captivate users.",
+        "Enhance your overall experience within Zurapark by exploring its unique and exclusive features."
+      ]
+    },
+    {
+      "tag": "NFT Collectibles",
+      "patterns": [
+        "Elevate your status with coveted NFT collectibles.",
+        "Acquire and showcase your exclusive digital assets."
+      ],
+      "responses": [
+        "Own exclusive NFT collectibles to elevate your status within Zuraverse.",
+        "Acquire, showcase, and trade your unique digital assets in the form of NFT collectibles."
+      ]
+    },
+    {
+      "tag": "Community Engagement",
+      "patterns": [
+        "Connect with fellow enthusiasts and build lasting friendships.",
+        "Stay informed about events, updates, and collaborations."
+      ],
+      "responses": [
+        "Join our community to connect with fellow enthusiasts, fostering lasting friendships.",
+        "Stay updated on events, collaborations, and platform updates through our engaging community."
+      ]
+    },
+    {
+      "tag": "Future Developments",
+      "patterns": [
+        "Be on the lookout for upcoming expansions and features.",
+        "Shape the future of Zuraverse by sharing your insights."
+      ],
+      "responses": [
+        "Stay tuned for exciting expansions and new features that are in the pipeline.",
+        "Your insights and feedback can help shape the future direction of Zuraverse."
+      ]
+    },
+    {
+      "tag": "How to Get Started",
+      "patterns": [
+        "Join Zuraverse today and experience the next-level metaverse.",
+        "Create your account, access products, and dive into the excitement."
+      ],
+      "responses": [
+        "Embark on your Zuraverse journey today and explore the next-level metaverse experience.",
+        "Getting started is easy – create your account, access a range of products, and dive into the excitement."
+      ]
+    },
+    {
+      "tag": "Hippi-alience Jokes",
+      "patterns": [
+        "Tell me a joke about the hippi-alience of Zuraverse.",
+        ".Give me a funny Zuraverse hippi-alience joke"
+      ],
+      "responses": [
+        "Why did the alien in Zuraverse join the hippi-alience? Because they heard it's all about peace, love, and universal harmony!",
+        "In Zuraverse, the hippi-alience organized a music festival on a distant planet. It was truly out of this world!"
+      ]
+    },
+    {
+      "tag": "Developer Jokes",
+      "patterns": [
+        "Tell me a developer joke.",
+        "Give me a joke about programmers."
+      ],
+      "responses": [
+        "Why do programmers always mix up Christmas and Halloween? Because Oct 31 == Dec 25!",
+        "Why do programmers prefer using the dark mode? Because light attracts bugs!",
+        "Why did the developer go broke? Because he lost his cache!",
+        "Why do programmers dislike nature? It has too many bugs.",
+        "Why did the programmer quit his job? He didn't get arrays."
+      ]
+    }
+    
+  ]
+}
