@@ -3,19 +3,21 @@ import numpy
 import PIL
 import datetime
 
-# Uncomment the function below and use haarcascade classifier to capture the faces, then annotate them using open-cv
-
-
-
-# def Face_Cascade(frame):
-    # face_cascade=cv2.CascadeClassifier(cv2.data.haarcascades+'')  # Add link to haarcascade file
-    # gray =                                                        # Convert the image
-    # faces =                                                       # Use DetectMultiScale method to capture faces
-    # times=[]
-    # for (x,y,w,h) in faces:
-    #     img =                                                     # Annotate the faces
-    #     roi_gray = gray[y:y+h, x:x+w]
-    #     roi_color = frame[y:y+h, x:x+w]
+def Face_Cascade(frame):
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml') # Load the Haar Cascade Classifier for face detection
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) # Convert the frame 
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5) # Use the detectMultiScale method to capture faces
+    times = []
+    for (x, y, w, h) in faces:
+        cv2.rectangle(frame, (x, y), (x + w, y + h), (0, 255, 0), 2) # Annotate the faces by drawing rectangles
+        
+        cv2.putText(frame, f'Face: ({x}, {y})', (x, y - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2) #text with coordinates on the detected face
+        
+        # extract the region of interest (ROI)
+        roi_gray = gray[y:y + h, x:x + w]
+        roi_color = frame[y:y + h, x:x + w]
+    cv2.imshow('Annotated Frame', frame) # Display the frame
+    return frame, faces
 
 
 
@@ -28,7 +30,7 @@ if __name__=='__main__':
     while (cap.isOpened()):
         ret, frame = cap.read()
         if ret == True:
-            # Face_Cascade(frame)
+            Face_Cascade(frame)
             out.write(frame)
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             cv2.imshow('frame', frame)
