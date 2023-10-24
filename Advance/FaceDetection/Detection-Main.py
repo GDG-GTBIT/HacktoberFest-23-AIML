@@ -3,6 +3,15 @@ import numpy
 import PIL
 import datetime
 
+def count_Faces(frame):
+    face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')  # Load the Haar Cascade Classifier for face detection
+    gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)  # Convert the frame
+    faces = face_cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5)  # Use the detectMultiScale method to capture faces
+    # Get the number of detected faces
+    num_faces = len(faces)
+    cv2.putText(frame, f'Number of Faces: {num_faces}', (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)  # Display the face count
+    return num_faces
+
 def Face_Cascade(frame):
     face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml') # Load the Haar Cascade Classifier for face detection
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY) # Convert the frame 
@@ -21,7 +30,6 @@ def Face_Cascade(frame):
 
 
 
-
 if __name__=='__main__':
     cap = cv2.VideoCapture(0)
     fourcc = cv2.VideoWriter_fourcc(*'XVID')
@@ -31,6 +39,7 @@ if __name__=='__main__':
         ret, frame = cap.read()
         if ret == True:
             Face_Cascade(frame)
+            count_Faces(frame)
             out.write(frame)
             gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
             cv2.imshow('frame', frame)
